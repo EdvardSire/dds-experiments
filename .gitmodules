@@ -1,0 +1,3 @@
+[submodule "dds-fmu"]
+	path = dds-fmu
+	url = git@github.com:EdvardSire/dds-fmu.git

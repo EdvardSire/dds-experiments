@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OspSystemStructure xmlns="http://opensimulationplatform.com/MSMI/OSPSystemStructure" version="0.1">
+  <StartTime>0.0</StartTime>
+  <BaseStepSize>0.01</BaseStepSize>
+  <Algorithm>fixedStep</Algorithm>
+  <Simulators>
+    <Simulator name="no.sintef.dds-fmu1" source="sintef-domainid-1-port-7650.fmu">
+      <InitialValues>
+        <InitialValue variable="pub.Roundtrip.is_pos">
+          <Boolean value="false"/>
+        </InitialValue>
+      </InitialValues>
+    </Simulator>
+    <Simulator name="no.sintef.dds-fmu2" source="sintef-domainid-0-port-7400.fmu">
+      <InitialValues>
+        <InitialValue variable="pub.Roundtrip.is_pos">
+          <Boolean value="true"/>
+        </InitialValue>
+      </InitialValues>
+    </Simulator>
+  </Simulators>
+</OspSystemStructure>
