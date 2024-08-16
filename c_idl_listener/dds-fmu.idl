@@ -1,0 +1,8 @@
+/**
+   @brief Some example data structures used as DDS types, which can be mapped to signals in FMI.
+*/
+module idl {
+  struct Signal {
+    boolean is_pos;
+  };
+};
